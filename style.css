@@ -22,12 +22,18 @@ body{
     background-color: #1993D4;
 }
 .sidebar>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-size: 25px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 50px;
     padding-left: 8%;
     color: white;
     /*border: 1px solid black;*/
+}
+.sidebar>div>i{
+    font-size: 18px;
 }
 #logo{
     font-size: 35px;
@@ -69,8 +75,9 @@ body{
     font-size: 22px;
 }
 .search>input{
-    width: 80%;
+    width: 100%;
     height: 40%;
+    text-indent: 1rem;
     border: none;
     border-radius: 15px;
     background-color: rgb(225, 225, 225);
@@ -136,14 +143,20 @@ body{
 .editButtons{
     grid-column: 5 / 8;
     grid-row-start: 2;
-    justify-content: space-around;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 10%;
 }
 .editButtons>button{
-    height: 45%;
-    width: 22%;
+    height: 2rem;
+    width: 5rem;
     font-size: 15px;
     color: white;
     border: none;
     background-color: #1993D4;
     border-radius: 20px;
+}
+.editButtons>button:hover{
+    font-size: 18px;
+    transition: 0.3s;
 }
